@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/mjmaurijimenez/sense.githup.io/issues"
   },
-  "homepage": "https://github.com/mjmaurijimenez/sense.githup.io#readme"
+  "homepage": "https://github.com/mjmaurijimenez/sense.githup.io#readme",
+  "dependencies": {
+    "sass": "^1.75.0"
+  }
 }
