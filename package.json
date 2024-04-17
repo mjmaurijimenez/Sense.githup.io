@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mjmaurijimenez/sense.githup.io#readme",
   "dependencies": {
+    "node-sass": "^9.0.0",
     "sass": "^1.75.0"
   }
 }
