@@ -1,12 +1,19 @@
 {
-  "name": "sense",
+  "name": "sense.githup.io",
   "version": "1.0.0",
-  "description": "paguina sense",
+  "description": "\"website de de local de empanada\" ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "maurijimenez",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjmaurijimenez/sense.githup.io.git"
+  },
+  "author": "mjmaurijimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjmaurijimenez/sense.githup.io/issues"
+  },
+  "homepage": "https://github.com/mjmaurijimenez/sense.githup.io#readme"
 }
