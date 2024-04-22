@@ -254,20 +254,7 @@ section {
     padding: 70px 14% 60px;
     
 }
-/*
-.col-md-6 .d-flex .align-items-center{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 4rem;
-}
 
-.row-about2 {
-    position: relative;
-    padding: 100px 10px 400px;
-    background: transparent;
-    border-radius: 3rem;
-}*/
 .container2 {
     padding: 30px 10% 70px;
     display: flexbox;

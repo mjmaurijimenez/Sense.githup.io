@@ -1,0 +1,64 @@
+/*CONTACT*/
+
+.contact-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contact-text {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.contact-text h2 {
+    font-size: $h2-font;
+    margin-bottom: 10px;
+}
+
+.contact-text p {
+    color: $second-color;
+    font-size: $p-font;
+    max-height: 950px;
+    line-height: 30px;
+    margin-bottom: 3rem;
+}
+
+.social i {
+    display: inline-block;
+    font-size: 32px;
+    color: $second-color;
+    margin: 0 20px;
+    transition: all 0.5s ease;
+}
+
+.social .clr i{
+    color: $main-color;
+}
+
+.social i:hover {
+    color: $main-color;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+}
+
+.main-d a {
+    display: flex;
+    align-items: center;
+    color: $text-color;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main-d i {
+    vertical-align: middle;
+    margin-right: 12px;
+    font-size: 28px;
+    color: $main-color;
+}

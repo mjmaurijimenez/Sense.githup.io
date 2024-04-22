@@ -1,0 +1,48 @@
+/* About us*/
+
+
+section {
+    padding: 70px 14% 60px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4rem;
+}
+.about-img img {
+    width: 100%;
+    height: auto;
+}
+
+.about-text h2 {
+    font-size: $h2-font;
+    line-height: 1.3;
+    margin-bottom: 2rem;
+
+
+    & p {
+        color: $second-color;
+        font-size: $p-font;
+        line-height: 30px;
+        margin-bottom: 3rem;
+    }
+    
+}
+
+
+/*About.html*/
+
+.about-section-padding {
+    padding: 70px 14% 60px;
+    
+}
+
+.container2 {
+    padding: 30px 10% 70px;
+    display: flexbox;
+    
+    gap: 7rem;
+    text-align: center;
+}
