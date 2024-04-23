@@ -10,20 +10,22 @@
 .contact-text {
     text-align: center;
     margin-bottom: 4rem;
+
+    & h2 {
+        font-size: $h2-font;
+        margin-bottom: 10px;
+    }
+    
+    & p {
+        color: $second-color;
+        font-size: $p-font;
+        max-height: 950px;
+        line-height: 30px;
+        margin-bottom: 3rem;
+    }
+    
 }
 
-.contact-text h2 {
-    font-size: $h2-font;
-    margin-bottom: 10px;
-}
-
-.contact-text p {
-    color: $second-color;
-    font-size: $p-font;
-    max-height: 950px;
-    line-height: 30px;
-    margin-bottom: 3rem;
-}
 
 .social i {
     display: inline-block;
@@ -31,15 +33,16 @@
     color: $second-color;
     margin: 0 20px;
     transition: all 0.5s ease;
+    
+    & i:hover {
+        color: $main-color;
+    }
 }
 
 .social .clr i{
     color: $main-color;
 }
 
-.social i:hover {
-    color: $main-color;
-}
 
 .details {
     display: flex;

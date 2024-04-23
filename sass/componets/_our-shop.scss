@@ -1,24 +1,26 @@
 /*our shop*/
-
+/*
 .about-us {
     background: $bg-color;
     color:$text-color;
-}
+}*/
 
 .middle-text {
     text-align: center;
+
+    .middle-text h4 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: $main-color;
+    }
+    
+    .middle-text h2 {
+        font-size: $h2-font;
+    }
+    
 }
 
-.middle-text h4 {
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: $main-color;
-}
-
-.middle-text h2 {
-    font-size: $h2-font;
-}
 
 .Shop-content {
     display: grid;
@@ -33,71 +35,77 @@
     padding: 10px 35px 40px;
     background: $other-color;
     border-radius: 3rem;
+
+    & img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.5s ease;
+        cursor: pointer;
+    }
+    
+    & h3 {
+        font-size: 18px;
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+    
+    & p {
+        color: $second-color;
+        font-size: $p-font;
+        line-height: 30px;
+        margin-bottom: 1.1rem;
+    }
+    
 }
 
 
 
-.row img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.5s ease;
-    cursor: pointer;
-}
-
-.row h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
-    font-weight: 700;
-}
-
-.row p {
-    color: $second-color;
-    font-size: $p-font;
-    line-height: 30px;
-    margin-bottom: 1.1rem;
-}
 
 .in-text {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    & .price h6 {
+        font-size: 17px;
+        color: $main-color;
+        font-weight: 600;
+    }
+    
+    & .s-btn a {
+        display: inline-block;
+        padding: 9px 23px;
+        background: $bg-color;
+        color: $main-color;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        border-radius: 3rem;
+        transition: all 0.5s ease;
+    
+    }
+    
+    & .s-btn a:hover {
+        background: $main-color;
+        color: $bg-color;
+        box-shadow: #ff9f0d 0px 1px 25px;
+    }
 }
 
-.in-text .price h6 {
-    font-size: 17px;
-    color: $main-color;
-    font-weight: 600;
-}
 
-.in-text .s-btn a {
-    display: inline-block;
-    padding: 9px 23px;
-    background: $bg-color;
-    color: $main-color;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    border-radius: 3rem;
-    transition: all 0.5s ease;
-
-}
-
-.in-text .s-btn a:hover {
-    background: $main-color;
-    color: $bg-color;
-    box-shadow: #ff9f0d 0px 1px 25px;
-}
 
 .top-icon {
     position: absolute;
     top: 30px;
     left: 35px;
+
+    & i {
+        font-size: 22px;
+        color: $main-color;
+    }
 }
 
-.top-icon i {
-    font-size: 22px;
-    color: $main-color;
-}
+
 
 .row-btn {
     text-align: center;
@@ -120,14 +128,16 @@
     padding: 35px;
     background: $other-color;
     border-radius: 3rem;
+
+    & p {
+        color: $second-color;
+        font-size: $p-font;
+        line-height: 30px;
+        margin-bottom: 1.5rem;
+    }
+    
 }
 
-.box p {
-    color: $second-color;
-    font-size: $p-font;
-    line-height: 30px;
-    margin-bottom: 1.5rem;
-}
 
 .in-box {
     display: flex;

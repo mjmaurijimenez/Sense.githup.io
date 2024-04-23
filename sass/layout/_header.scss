@@ -20,13 +20,15 @@ header {
     color: $text-color;
     font-size: 33px;
     font-weight: 700;
+
+    & i {
+        vertical-align: middle;
+        margin-right: 8px;
+        color: $main-color;
+    }
 }
 
-.logo i {
-    vertical-align: middle;
-    margin-right: 8px;
-    color: $main-color;
-}
+
 
 .navlist {
     display: flex;
