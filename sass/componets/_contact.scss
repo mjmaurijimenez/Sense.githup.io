@@ -22,6 +22,10 @@
         max-height: 950px;
         line-height: 30px;
         margin-bottom: 3rem;
+
+        @media (max-width: $mediatable-520){
+            max-width: 100%;
+        }
     }
     
 }
@@ -33,6 +37,10 @@
     color: $second-color;
     margin: 0 20px;
     transition: all 0.5s ease;
+
+    @media (max-width: $mediatable-520) {
+        margin: 0 10px;
+    }
     
     & i:hover {
         color: $main-color;
@@ -49,6 +57,10 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 3rem;
+
+    @media (max-width: $mediatable-520){
+        gap: 1.5rem;
+    }
 }
 
 .main-d a {

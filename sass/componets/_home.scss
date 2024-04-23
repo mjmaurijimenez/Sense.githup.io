@@ -2,6 +2,11 @@
 
 section {
     padding: 70px 14% 60px;
+
+    @media (min-width: $mediadesktop-1545) {
+        padding: 50px 4% 40px;
+        transition: .2s;
+    }
 }
 .home {
     position: relative;
@@ -11,9 +16,31 @@ section {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
 
+    @media (min-width: $mediadesktop-1180){
+        height: 85vh;
+    }
+    @media (max-width: $mediadesktop-1045) {
+        height: 70vh;
+    }
+    @media (max-width: $mediadesktop-860){
+        grid-template-columns: 1fr;
+        height: 118vh;
+    }
+    @media (max-width: $mediatable-440){
+        height: 110vh;
+        gap: 0.1rem;
+    }
+
     .home-img img {
         width: 100%;
         height: auto;
+
+        @media (max-width: $mediadesktop-1045){
+            width: 100%;
+            max-width: 490px;
+            height: auto;
+        }
+        
     }
     
     .home-text h1 {
@@ -21,6 +48,8 @@ section {
         font-weight: 700;
         line-height: 1.3;
         margin-bottom: 3rem;
+
+        
     }
     
     span {
@@ -70,6 +99,12 @@ section {
     color: $main-color;
     transition: all 0.5s ease;
 
+    @media (max-height:$mediatable-440) {
+        
+            margin-top: 10px;
+        
+    }
+
     .btn2:hover {
         transform: scale(1.1) translateX(12px);
     }
@@ -81,6 +116,12 @@ section {
 header.sticky {
     padding: 12px 14%;
     background: $other-color;
+
+    @media (min-width: $mediadesktop-1545) {
+
+            padding: 14px 4%;
+            transition: .2s;
+        }
 }
 .container {
     padding: 30px 14% 70px;
@@ -88,6 +129,10 @@ header.sticky {
     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
     gap: 2rem;
     text-align: center;
+
+    @media (min-width: $mediadesktop-1545){
+        padding: 30px 4% 50px;
+    }
 
     
     .container-box {
@@ -121,4 +166,45 @@ header.sticky {
 
 
 }
+
+@media (min-width: $mediadesktop-1180) {
+    :root {
+        $big-font: 4rem;
+        $h2-font: 2.2rem;
+        $p-font: 15px;
+    }
+
+}
+
+@media (max-width: $mediadesktop-1045) {
+    :root {
+        $big-font: 3.3rem;
+        $h2-font: 2rem;
+    }
+}
+
+@media (max-width: $mediatable-475) {
+    :root {
+        $big-font: 2.8rem;
+        $h2-font: 2rem;
+    }
+}
+
+@media (max-width: $mediadesktop-860) {
+    
+    
+    .home-text {
+        padding-top: 60px;
+    }
+    .home-img {
+        text-align: center;
+    }
+
+}
+@media (max-width: $mediatable-440) {
+    
+    .btn2 {
+        margin-top: 10px;
+    }
+} 
 

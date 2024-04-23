@@ -1,6 +1,7 @@
 /*abstracts*/
 /*color*/
 /*typography*/
+/*breackpoints*/
 /*base*/
 * {
   margin: 0;
@@ -30,6 +31,10 @@ header {
   background: transparent;
   padding: 30px 14%;
   transition: all 0.5s ease; }
+  @media (max-width: 1545px) {
+    header {
+      padding: 22px 4%;
+      transition: .2s; } }
 
 .logo {
   display: flex;
@@ -44,6 +49,17 @@ header {
 
 .navlist {
   display: flex; }
+  @media (max-width: 1076px) {
+    .navlist {
+      position: absolute;
+      top: -1000px;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      background: #212121;
+      transition: all 0.5s ease; } }
 
 .navlist a {
   color: #fff;
@@ -51,6 +67,12 @@ header {
   font-weight: 600;
   margin: 0 30px;
   transition: all 0.5s ease; }
+  @media (max-width: 1076px) {
+    .navlist a {
+      display: block;
+      padding: 0.5rem;
+      margin: 1rem;
+      border-left: 2px solid #ff9f0d; } }
 
 .navlist a:hover {
   color: #ff9f0d; }
@@ -80,15 +102,26 @@ header {
   z-index: 100001;
   cursor: pointer;
   display: none; }
+  @media (max-width: 1076px) {
+    #menu-icon {
+      display: initial; } }
 
 .nav-icons i:hover {
   transform: scale(1.1);
   color: #fff; }
 
+@media (max-width: 1076px) {
+  .navlist.open {
+    top: 100%; } }
+
 /*home*/
 /* Home*/
 section {
   padding: 70px 14% 60px; }
+  @media (min-width: 1545px) {
+    section {
+      padding: 50px 4% 40px;
+      transition: .2s; } }
 
 .home {
   position: relative;
@@ -97,9 +130,28 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center; }
+  @media (min-width: 1180px) {
+    .home {
+      height: 85vh; } }
+  @media (max-width: 1045px) {
+    .home {
+      height: 70vh; } }
+  @media (max-width: 860px) {
+    .home {
+      grid-template-columns: 1fr;
+      height: 118vh; } }
+  @media (max-width: 440px) {
+    .home {
+      height: 110vh;
+      gap: 0.1rem; } }
   .home .home-img img {
     width: 100%;
     height: auto; }
+    @media (max-width: 1045px) {
+      .home .home-img img {
+        width: 100%;
+        max-width: 490px;
+        height: auto; } }
   .home .home-text h1 {
     font-size: 4.5rem;
     font-weight: 700;
@@ -136,12 +188,19 @@ section {
   border-bottom: 3px solid #ff9f0d;
   color: #ff9f0d;
   transition: all 0.5s ease; }
+  @media (max-height: 440px) {
+    .btn2 {
+      margin-top: 10px; } }
   .btn2 .btn2:hover {
     transform: scale(1.1) translateX(12px); }
 
 header.sticky {
   padding: 12px 14%;
   background: #212121; }
+  @media (min-width: 1545px) {
+    header.sticky {
+      padding: 14px 4%;
+      transition: .2s; } }
 
 .container {
   padding: 30px 14% 70px;
@@ -149,6 +208,9 @@ header.sticky {
   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   gap: 2rem;
   text-align: center; }
+  @media (min-width: 1545px) {
+    .container {
+      padding: 30px 4% 50px; } }
   .container .container-box {
     padding: 43px;
     background: #212121;
@@ -169,6 +231,16 @@ header.sticky {
   .container .container-box a:hover {
     color: #ff9f0d; }
 
+@media (max-width: 860px) {
+  .home-text {
+    padding-top: 60px; }
+  .home-img {
+    text-align: center; } }
+
+@media (max-width: 440px) {
+  .btn2 {
+    margin-top: 10px; } }
+
 /*about*/
 /* About us*/
 section {
@@ -179,9 +251,17 @@ section {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 4rem; }
+  @media (max-width: 860px) {
+    .about {
+      grid-template-columns: 1fr; } }
   .about .about-img img {
     width: 100%;
     height: auto; }
+    @media (max-width: 1045px) {
+      .about .about-img img {
+        width: 100%;
+        max-width: 490px;
+        height: auto; } }
   .about .about-text h2 {
     font-size: 2.6rem;
     line-height: 1.3;
@@ -202,6 +282,10 @@ section {
   color: #212121;
   gap: 7rem;
   text-align: center; }
+
+@media (max-width: 860px) {
+  .about-img {
+    text-align: center; } }
 
 /*our shop*/
 /*our shop*/
@@ -348,6 +432,9 @@ section {
     max-height: 950px;
     line-height: 30px;
     margin-bottom: 3rem; }
+    @media (max-width: 520px) {
+      .contact-text p {
+        max-width: 100%; } }
 
 .social i {
   display: inline-block;
@@ -355,6 +442,9 @@ section {
   color: #9e9e9e;
   margin: 0 20px;
   transition: all 0.5s ease; }
+  @media (max-width: 520px) {
+    .social i {
+      margin: 0 10px; } }
   .social i i:hover {
     color: #ff9f0d; }
 
@@ -366,6 +456,9 @@ section {
   flex-wrap: wrap;
   align-items: center;
   gap: 3rem; }
+  @media (max-width: 520px) {
+    .details {
+      gap: 1.5rem; } }
 
 .main-d a {
   display: flex;

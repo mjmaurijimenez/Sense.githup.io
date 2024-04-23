@@ -11,8 +11,14 @@ header {
     padding: 30px 14%;
     transition: all 0.5s ease;
 
+@media (max-width: $mediadesktop-1545) {
+
+    
+        padding: 22px 4%;
+        transition: .2s;
 
 
+    }
 }
 .logo {
     display: flex;
@@ -32,6 +38,19 @@ header {
 
 .navlist {
     display: flex;
+
+    @media (max-width: $mediadesktop-1076){
+        position: absolute;
+        top: -1000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background: $other-color;
+        transition: all 0.5s ease;
+
+    }
 }
 
 .navlist a {
@@ -40,6 +59,13 @@ header {
     font-weight: 600;
     margin: 0 30px;
     transition: all 0.5s ease;
+
+    @media (max-width: $mediadesktop-1076) {
+        display: block;
+        padding: 0.5rem;
+        margin: 1rem;
+        border-left: 2px solid $main-color;
+    }
 }
 
 .navlist a:hover {
@@ -74,6 +100,10 @@ header {
     z-index: 100001;
     cursor: pointer;
     display: none;
+
+    @media (max-width: $mediadesktop-1076){
+        display: initial;
+    }
 }
 
 .nav-icons i:hover {
@@ -83,3 +113,10 @@ header {
 
 
 
+
+@media (max-width: $mediadesktop-1076) {
+    
+    .navlist.open {
+        top: 100%;
+    }
+}

@@ -12,10 +12,20 @@ section {
     align-items: center;
     gap: 4rem;
 
+    @media (max-width: $mediadesktop-860) {
+        grid-template-columns: 1fr;
+    }
+
 
     .about-img img {
         width: 100%;
         height: auto;
+
+        @media (max-width: $mediadesktop-1045){
+            width: 100%;
+        max-width: 490px;
+        height: auto;
+        }
     }
     
     .about-text h2 {
@@ -50,4 +60,11 @@ section {
     color: $other-color;
     gap: 7rem;
     text-align: center;
+}
+
+@media (max-width: $mediadesktop-860) {
+    
+    .about-img {
+        text-align: center;
+    }
 }
