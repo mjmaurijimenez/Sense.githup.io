@@ -68,3 +68,78 @@ section {
         text-align: center;
     }
 }
+
+
+/*---- About.html ----*/
+
+
+.clearfix {
+    display: flex;
+    margin-top: 5rem;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    
+    
+
+}
+
+.about-html {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    
+}
+
+.about-html .img-about:nth-child(2) {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.about-html .about-html-text:nth-child(1) {
+    padding-top: 20px;
+    flex: 1;
+    font-size: 30px;
+}
+
+
+
+.img-about img{
+    align-items: center;
+    border-radius: 3rem;
+}
+
+.about-html-container {
+    margin-top: 2rem;
+    
+
+}
+
+
+.about-html-text h1 {
+    margin-top: 20px;
+    font-size: $big-font;
+    font-weight: 70px;
+    line-height: 1.5rem;
+    margin-bottom: 3rem;
+
+    
+}
+
+.about-html-text p {
+    color: $second-color;
+    font-size: $p-font;
+    line-height: 30px;
+    margin-bottom: 3rem;
+}
+
+
+span {
+    color: $main-color;
+}
+
+.img-about img{
+    width: 80%;
+    height: auto;
+}
