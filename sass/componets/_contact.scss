@@ -57,6 +57,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 3rem;
+    
 
     @media (max-width: $mediatable-520){
         gap: 1.5rem;
@@ -76,4 +77,5 @@
     margin-right: 12px;
     font-size: 28px;
     color: $main-color;
+    text-decoration: none;
 }

@@ -34,7 +34,9 @@ sr.reveal('.home-img',{delay:400});
 sr.reveal('.container',{delay:400});
 
 sr.reveal('.about-img',{});
+sr.reveal('.img-about',{});
 sr.reveal('.about-text',{delay:300});
+sr.reveal('.about-html-text',{delay:300});
 
 sr.reveal('.middle-text',{});
 sr.reveal('.row-btn,.shop-content',{delay:300});

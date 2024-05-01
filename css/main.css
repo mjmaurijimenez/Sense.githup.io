@@ -523,3 +523,18 @@ span {
   margin-right: 12px;
   font-size: 28px;
   color: #ff9f0d; }
+
+/*scroll*/
+/*Scroll*/
+.scroll {
+  position: fixed;
+  bottom: 2.2rem;
+  border-top: 2rem;
+  right: 3.2rem; }
+
+.scroll i {
+  font-size: 22px;
+  color: #fff;
+  background: #ff9f0d;
+  padding: 10px;
+  border-radius: 2rem; }
